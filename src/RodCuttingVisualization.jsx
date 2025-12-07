@@ -1,3 +1,4 @@
+import React from 'react';
 const { useState, useEffect, useRef, useMemo } = React;
 
 // SVG Icon Components
@@ -68,8 +69,8 @@ const PseudoCode = ({ highlightedLine }) => {
   );
 };
 
-// Main App Component
-const App = () => {
+// Main App Componentf
+const RodCuttingVisualization = () => {
   const [rodLength, setRodLength] = useState(10);
   const [pricesInput, setPricesInput] = useState('1 5 8 9 10 17 17 20 24 30');
   const [currentStep, setCurrentStep] = useState(0);
@@ -848,3 +849,4 @@ const App = () => {
 };
 
 // App component is now globally accessible
+export default RodCuttingVisualization;
